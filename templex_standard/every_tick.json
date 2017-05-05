@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "every_tick": {
+            "trigger": "minecraft:arbitrary_player_tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Every Tick",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/advancement revoke @a[score_SpawnPoint_min=1] only templex_standard:spawnpoint",
+            "/advancement revoke @a[score_Spawn_min=1] only templex_standard:spawn",
+            "/advancement revoke @a[score_Rules_min=1] only templex_standard:rules",
+            "/advancement revoke @a[score_Home_min=1] only templex_standard:home",
+            "/advancement revoke @a[score_Logins_min=1] only templex_standard:join_game_again",
+            "/advancement revoke @a[score_Commands_min=1] only templex_standard:commands",
+            "/advancement revoke @a[score_ViewPlayTime_min=1] only templex_standard:view_play_time",
+            "/advancement revoke @a[score_Vote_min=1] only templex_standard:vote",
+            "/advancement revoke @a only templex_standard:every_tick"
+        ]
+    }
+}

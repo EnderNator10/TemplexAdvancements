@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Home",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/kill @s[score_Home_min=1]",
+            "/scoreboard players reset @s Home",
+            "/scoreboard players enable @a Home",
+            "/scoreboard players enable @s Home"
+        ]
+    }
+}

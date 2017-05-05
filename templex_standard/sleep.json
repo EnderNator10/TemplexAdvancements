@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "sleep_check": {
+            "trigger": "minecraft:slept_in_bed"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:stone_pickaxe",
+            "data": 0
+        },
+        "title": "Sleep Check",
+        "description": "",
+        "icon": {
+            "item": "minecraft:bed"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/weather clear 100000",
+            "/time set 0",
+            "/tellraw @a [{\"selector\":\"@s\"},{\"text\":\" has just slept the night away\",\"color\":\"red\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
+            "/advancement revoke @s only templex_standard:sleep"
+        ]
+    }
+}

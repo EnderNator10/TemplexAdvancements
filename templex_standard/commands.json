@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Commands",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/tp @s[score_Commands_min=1] @e[tag=world_commands]",
+            "/tellraw @s[score_Commands_min=1] [{\"text\":\"Teleporting to the Command Room...!\",\"italic\":\"true\",\"color\":\"green\"}]",
+            "/scoreboard players reset @s Commands",
+            "/scoreboard players enable @a Commands"
+        ]
+    }
+}

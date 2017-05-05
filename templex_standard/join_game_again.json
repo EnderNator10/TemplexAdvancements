@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Return to Game",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/scoreboard players add Logins Stats 1",
+            "/execute @s[score_Logins_min=1] ~ ~ ~ tellraw @a [{\"text\":\"Welcome back to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s[score_Logins_min=1]\",\"color\":\"geen\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
+            "/scoreboard players reset @s Logins",
+            "/scoreboard players enable @a Logins",
+            "/scoreboard players add @a Karma 30"
+        ]
+    }
+}

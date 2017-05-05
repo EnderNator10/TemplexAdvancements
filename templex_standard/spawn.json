@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Spawn",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/tp @s @e[tag=world_spawn]",
+            "/scoreboard players reset @s Spawn",
+            "/scoreboard players enable @a Spawn"
+        ]
+    }
+}

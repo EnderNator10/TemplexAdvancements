@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Spawnpoint",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/spawnpoint @s",
+            "/tellraw @s {\"text\":\"Spawnpoint successfully set!\",\"color\":\"blue\",\"italic\":\"true\"}}",
+            "/scoreboard players reset @s SpawnPoint",
+            "/scoreboard players enable @a SpawnPoint"
+        ]
+    }
+}
