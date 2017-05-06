@@ -1,0 +1,41 @@
+{
+    "criteria": {
+        "every_tick": {
+            "trigger": "minecraft:arbitrary_player_tick"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Teams Updater",
+        "description": "",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "rewards": {
+        "commands": [
+            "/execute @p[team=NC,score_PlayTime_min=504000,tag=!1] ~ ~ ~ tellraw @a [{\"selector\":\"@a[team=NC,score_PlayTime_min=504000,tag=!1]\"},{\"text\":\" \\u00A7chas just leveled up to the \\u00A78Warrior \\u00A7crank!\"}]",
+            "/execute @p[team=NC,score_PlayTime_min=504000,tag=!1] ~ ~ ~ execute @e[type=Bat] ~ ~ ~ summon Lightning_Bolt ~ ~ ~",
+            "/scoreboard teams join Warrior @a[team=NC,score_PlayTime_min=504000,tag=!1]",
+            "/scoreboard players tag @a[team=NC,score_PlayTime_min=504000,tag=!1] add 1",
+            "/execute @p[team=Warrior,score_PlayTime_min=1224000,tag=!Arch] ~ ~ ~ execute @e[type=Bat] ~ ~ ~ summon Lightning_Bolt ~ ~ ~",
+            "/execute @p[team=Warrior,score_PlayTime_min=1224000,tag=!Arch] ~ ~ ~ tellraw @a [{\"selector\":\"@a[team=Warrior,score_PlayTime_min=1224000,tag=!Arch]\"},{\"text\":\" \\u00A7chas just leveled up to the \\u00A7dArchaeologist \\u00A7crank!\"}]",
+            "/scoreboard teams join Archaeologist @a[team=Warrior,score_PlayTime_min=1224000,tag=!Arch]",
+            "/scoreboard players tag @a[team=Warrior,score_PlayTime_min=1224000,tag=!Arch] add Arch",
+            "/execute @p[team=Archaeologist,score_PlayTime_min=3168000,tag=!2] ~ ~ ~ tellraw @a [{\"selector\":\"@a[team=Archaeologist,score_PlayTime_min=3168000,tag=!2]\"},{\"text\":\" \\u00A7chas just leveled up to the \\u00A75Master \\u00A7crank!\"}]",
+            "/execute @p[team=Archaeologist,score_PlayTime_min=3168000,tag=!2] ~ ~ ~ execute @e[type=Bat] ~ ~ ~ summon Lightning_Bolt ~ ~ ~",
+            "/scoreboard teams join Master @a[team=Archaeologist,score_PlayTime_min=3168000,tag=!2]",
+            "/scoreboard players tag @a[team=Archaeologist,score_PlayTime_min=3168000,tag=!2] add 2",
+            "/execute @p[team=Master,score_PlayTime_min=5184000,tag=!3] ~ ~ ~ tellraw @a [{\"selector\":\"@a[team=Master,score_PlayTime_min=5184000,tag=!3]\"},{\"text\":\" \\u00A7chas just leveled up to the \\u00A79Knight \\u00A7crank!\"}]",
+            "/execute @p[team=Master,score_PlayTime_min=5184000,tag=!3] ~ ~ ~ execute @e[type=Bat] ~ ~ ~ summon Lightning_Bolt ~ ~ ~",
+            "/scoreboard teams join Knight @a[team=Master,score_PlayTime_min=5184000,tag=!3]",
+            "/scoreboard players tag @a[team=Master,score_PlayTime_min=5184000,tag=!3] add 3",
+            "/execute @p[team=Knight,score_PlayTime_min=12096000,tag=!4] ~ ~ ~ tellraw @a [{\"selector\":\"@a[team=Knight,score_PlayTime_min=12096000,tag=!4]\"},{\"text\":\" \\u00A7chas just leveled up to the \\u00A76Magician \\u00A7crank!\\n\\u00A76Congratulations, \"},{\"selector\":\"@a[team=Knight,score_PlayTime_min=12096000,tag=!4]\"},{\"text\":\" \\u00A76on achieving the \\u00A7aHighest \\u00A7cPlay\\u00A78-\\u00A75Time\\u00A78-\\u00A77Based \\u00A76rank!\"}]",
+            "/execute @p[team=Knight,score_PlayTime_min=12096000,tag=!4] ~ ~ ~ execute @e[type=Bat] ~ ~ ~ summon Lightning_Bolt ~ ~ ~",
+            "/scoreboard teams join Magician @a[team=Knight,score_PlayTime_min=12096000,tag=!4]",
+            "/scoreboard players tag @a[team=Knight,score_PlayTime_min=12096000,tag=!4] add 4",
+            "/advancement revoke @a only templex_standard:teams_updater"
+        ]
+    }
+}
