@@ -16,10 +16,11 @@
     },
     "rewards": {
         "commands": [
+            "/scoreboard players tag @a[tag=killed] remove killed",
             "/scoreboard players tag @s[score_Home_min=1] add killed",
             "/kill @s[tag=killed]",
-            "/scoreboard players enable @a Home",
-            "/scoreboard players enable @s Home"
+            "/scoreboard players reset * Home",
+            "/scoreboard players enable * Home"
         ]
     }
 }
