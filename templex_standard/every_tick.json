@@ -23,6 +23,12 @@
             "/execute @a[team=,tag=!joined] ~ ~ ~ tellraw @a [{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\" is a new player\",\"color\":\"red\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWelcome to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWe have now had \",\"color\":\"red\"},{\"score\":{\"name\":\"Players-All-Time\",\"objective\":\"Stats\"},\"color\":\"gold\"},{\"text\":\" players join this version of \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
             "/scoreboard players tag @a[tag=!joined] add joined",
 
+            "/scoreboard teams leave @a[team=NC,tag=joined]",
+            "/scoreboard teams leave @a[team=Archaeologist,tag=joined]",
+            "/scoreboard teams leave @a[team=Master,tag=joined]",
+            "/scoreboard teams leave @a[team=Knight,tag=joined]",
+            "/scoreboard teams leave @a[team=Magician,tag=joined]",
+
             "/spawnpoint @a[score_SpawnPoint_min=1]",
             "/tellraw @a[score_SpawnPoint_min=1] {\"text\":\"Spawnpoint successfully set!\",\"color\":\"blue\",\"italic\":\"true\"}}",
             "/execute @p[score_SpawnPoint_min=1] ~ ~ ~ scoreboard players enable @a SpawnPoint",
