@@ -15,8 +15,8 @@
     },
     "rewards": {
         "commands": [
-            "/spawnpoint @s",
-            "/tellraw @s {\"text\":\"Spawnpoint successfully set!\",\"color\":\"blue\",\"italic\":\"true\"}}",
+            "/spawnpoint @s[score_SpawnPoint_min=1]",
+            "/tellraw @s[score_SpawnPoint_min=1] {\"text\":\"Spawnpoint successfully set!\",\"color\":\"blue\",\"italic\":\"true\"}}",
             "/scoreboard players reset @s SpawnPoint",
             "/scoreboard players enable @a SpawnPoint"
         ]

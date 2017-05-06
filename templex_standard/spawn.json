@@ -15,7 +15,7 @@
     },
     "rewards": {
         "commands": [
-            "/tp @s @e[tag=world_spawn]",
+            "/tp @s[score_Spawn_min=1] @e[tag=world_spawn]",
             "/scoreboard players reset @s Spawn",
             "/scoreboard players enable @a Spawn"
         ]
