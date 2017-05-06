@@ -16,14 +16,63 @@
     "parent": "templex_standard:templex_root",
     "rewards": {
         "commands": [
-            "/advancement revoke @a[score_SpawnPoint_min=1] only templex_standard:spawnpoint",
-            "/advancement revoke @a[score_Spawn_min=1] only templex_standard:spawn",
-            "/advancement revoke @a[score_Rules_min=1] only templex_standard:rules",
+            "/execute @a[tag=!joined] ~ ~ ~ scoreboard players add Players-All-Time Stats 1",
+            "/tp @a[tag=!joined] @e[tag=world_spawn]",
+            "/spawnpoint @a[tag=!joined]",
+            "/scoreboard players set @p[tag=!joined] TriggerReset 1"
+            "/execute @a[tag=!joined] ~ ~ ~ tellraw @a [{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\" is a new player\",\"color\":\"red\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWelcome to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWe have now had \",\"color\":\"red\"},{\"score\":{\"name\":\"Players-All-Time\",\"objective\":\"Stats\"},\"color\":\"gold\"},{\"text\":\" players join this version of \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
+            "/scoreboard players tag @s[tag=!joined] add joined",
+
+            "/spawnpoint @a[score_SpawnPoint_min=1]",
+            "/tellraw @a[score_SpawnPoint_min=1] {\"text\":\"Spawnpoint successfully set!\",\"color\":\"blue\",\"italic\":\"true\"}}",
+            "/execute @p[score_SpawnPoint_min=1] ~ ~ ~ scoreboard players enable @a SpawnPoint",
+            "/execute @p[score_SpawnPoint_min=1] ~ ~ ~ scoreboard players reset @s SpawnPoint",
+
+            "/tp @a[score_Spawn_min=1] @e[tag=world_spawn]",
+            "/execute @p[score_Spawn_min=1] ~ ~ ~ scoreboard players enable @a Spawn",
+            "/execute @p[score_Spawn_min=1] ~ ~ ~ scoreboard players reset @a Spawn",
+
+            "/tellraw @a[score_Rules_min=1] [{\"text\":\"\\u00A77------- \\u00A74RULES \\u00A77-------\\n\\u00A7c- \\u00A72No griefing\/raiding. Don't even try.\\n\\u00A7c- \\u00A72You are prohibited from swearing. (You will be reminded to not swear.) If you do so repeatedly, you may be banned.\\n\\u00A7c- \\u00A72You are prohibited from spamming. (You will be kicked or banned.)\\n\\u00A7c- \\u00A72Respect the server staff members! (They work hard to keep you and the server safe!) If you offend them, they have every right to kick you. They may even ban you if you keep harassing them.\\n\\u00A7c- \\u00A72Use the RTP to get out of Spawn for the first time. It's for your own good! It TPs you out far enough that no one except the people you invite can get to you.\\n\\u00A74- \\u00A72You are prohibited from asking for ranks, items, operator, or favors from operators. If they don't do what you want, don't make a big deal about it. (i.e. Spamming them or insulting them)\\n\\u00A7c- \\u00A72You are prohibited from saying anything inappropriate. (Not even jokingly.) We have kids less than 6 who play on here.\\n\\u00A7c- \\u00A72You are prohibited from using capitalized letters repeatedly in chat. (Once for dramatic effect is okay.)\\n\\u00A7c- \\u00A72You are prohibited from using mods\/hacks \",\"color\":\"dark_green\"},{\"text\":\"\\u00A7lor \\u00A7oany resource pack\",\"color\":\"red\",\"bold\":\"true\"},{\"text\":\" that places you at an advantage above other players! (Optifine is okay.)\\n\\u00A7c- \\u00A72You are prohibited from doing repeated PvP! (It spams death messages.)\\n\\u00A74- \\u00A72You are prohibited from PvPing people who don't want to be PvPed. (If they hit you once, assume they did it by accident.)\\n\\u00A74- \\u00A72Respect all backgrounds and identifiers. (No jokes either. Please. It will be taken as literal, and you might get banned if Staff see fit.)\\n\\u00A74- \\u00A72Do not lie to staff.\\n\\u00A77-------------------\",\"color\":\"dark_green\"}]",
+            "/execute @p[score_Rules_min=1] ~ ~ ~ scoreboard players enable @a Rules",
+            "/execute @p[score_Rules_min=1] ~ ~ ~ scoreboard players reset @a Rules",
+
             "/advancement revoke @a[score_Home_min=1] only templex_standard:home",
-            "/advancement revoke @a[score_Logins_min=1] only templex_standard:join_game_again",
-            "/advancement revoke @a[score_Commands_min=1] only templex_standard:commands",
-            "/advancement revoke @a[score_ViewPlayTime_min=1] only templex_standard:view_play_time",
-            "/advancement revoke @a[score_Vote_min=1] only templex_standard:vote",
+
+            "/execute @a[score_Logins_min=1] ~ ~ ~ scoreboard players add Logins Stats 1",
+            "/execute @a[score_Logins_min=1] ~ ~ ~ tellraw @a [{\"text\":\"Welcome back to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s[score_Logins_min=1]\",\"color\":\"geen\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
+            "/execute @p[score_Logins_min=1] ~ ~ ~ scoreboard players enable @a Logins",
+            "/execute @a[score_Logins_min=1] ~ ~ ~ scoreboard players add @a Karma 30",
+            "/execute @a[score_Logins_min=1] ~ ~ ~ scoreboard players reset @s Logins",
+
+            "/tp @a[score_Commands_min=1] @e[tag=world_commands]",
+            "/tellraw @a[score_Commands_min=1] [{\"text\":\"Teleporting to the Command Room...!\",\"italic\":\"true\",\"color\":\"green\"}]",
+            "/execute @p[score_Commands_min=1] ~ ~ ~ scoreboard players enable @a Commands",
+            "/execute @p[score_Commands_min=1] ~ ~ ~ scoreboard players reset @s Commands",
+
+            "/execute @p[score_ViewPlayTime_min=1] ~ ~ ~ scoreboard players operation Z PlayTime = @s[score_ViewPlayTime_min=1] PlayTime",
+            "/execute @p[score_ViewPlayTime_min=1] ~ ~ ~ scoreboard players set Z ViewPlayTime 72000",
+            "/execute @p[score_ViewPlayTime_min=1] ~ ~ ~ scoreboard players operation Z PlayTime /= Z ViewPlayTime",
+            "/tellraw @p[score_ViewPlayTime_min=1] [{\"text\":\"You have been playing \",\"color\":\"red\",\"italic\":\"true\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\",\"italic\":\"true\",\"bold\":\"true\"},{\"text\":\" for approximately \",\"color\":\"red\",\"italic\":\"true\"},{\"score\":{\"name\":\"Z\",\"objective\":\"PlayTime\"},\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\" hours\",\"color\":\"red\",\"italic\":\"true\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
+            "/execute @p[score_ViewPlayTime_min=1] ~ ~ ~ scoreboard players enable @a ViewPlayTime",
+            "/execute @p[score_ViewPlayTime_min=1] ~ ~ ~ scoreboard players reset @s ViewPlayTime",
+
+            "/tellraw @a[score_Vote_min=1] [{\"text\":\"If you want to vote for us and earn \",\"color\":\"gray\",\"italic\":\"true\"},{\"text\":\"500\",\"color\":\"gold\",\"bold\":\"true\",\"italic\":\"true\"},{\"text\":\" Karma\",\"color\":\"red\",\"italic\":\"true\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"text\":\"then click this link\",\"color\":\"gray\",\"italic\":\"true\"},{\"text\":\": \",\"color\":\"dark_gray\"},{\"text\":\"http:\/\/templex.ddns.net\/#vote\",\"color\":\"aqua\",\"bold\":\"true\",\"underline\":\"true\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"\\u00A76http:\/\/templex.ddns.net\/#vote\"},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"http:\/\/templex.ddns.net\/#vote\"}}]",
+            "/execute @p[score_Vote_min=1] ~ ~ ~ scoreboard players enable @a Vote",
+            "/execute @p[score_Vote_min=1] ~ ~ ~ scoreboard players reset @s Vote",
+
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * Rules",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * SpawnPoint",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * TPEnd",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * Commands",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * Home",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * TPHere",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * TPSend",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * ViewPlayTime",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * Vote",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players enable * TriggerReset",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ tellraw @a [{\"text\":\"All triggers have been reset!\",\"color\":\"blue\",\"italic\":\"true\"}]",
+            "/execute @p[score_TriggerReset_min=1] ~ ~ ~ scoreboard players reset * TriggerReset",
+
             "/advancement revoke @a only templex_standard:every_tick"
         ]
     }
