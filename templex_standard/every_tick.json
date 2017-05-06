@@ -24,6 +24,7 @@
             "/scoreboard players tag @a[tag=!joined] add joined",
 
             "/scoreboard teams leave @a[team=NC,tag=joined]",
+            "/scoreboard teams leave @a[team=Warrior,tag=joined]",
             "/scoreboard teams leave @a[team=Archaeologist,tag=joined]",
             "/scoreboard teams leave @a[team=Master,tag=joined]",
             "/scoreboard teams leave @a[team=Knight,tag=joined]",
