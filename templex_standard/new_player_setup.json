@@ -17,6 +17,7 @@
         "commands": [
             "/execute @s[team=] ~ ~ ~ scoreboard players add Players-All-Time Stats 1",
             "/tp @s[team=] @e[tag=world_spawn]",
+            "/spawnpoint @s[team=]",
             "/execute @s[team=] ~ ~ ~ tellraw @a [{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\" is a new player\",\"color\":\"red\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWelcome to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWe have now had \",\"color\":\"red\"},{\"score\":{\"name\":\"Players-All-Time\",\"objective\":\"Stats\"},\"color\":\"gold\"},{\"text\":\" players join this version of \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
             "/scoreboard teams join NC @s[team=]"
         ]
