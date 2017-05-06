@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "every_tick": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "display": {
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "title": "Templex Advancements",
+        "description": "",
+        "show_toast": false,
+        "background": "minecraft:textures/blocks/gold_block.png",
+        "announce_to_chat": false
+    }
+}

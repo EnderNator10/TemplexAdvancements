@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
-        "title": "Spawnpoint",
-        "description": "",
+        "title": "SpawnPoint",
+        "description": "Controls the SpawnPoint trigger, which sets user spawnpoint when called.",
         "show_toast": false,
         "announce_to_chat": false
     },

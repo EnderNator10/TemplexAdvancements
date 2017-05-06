@@ -9,10 +9,11 @@
             "item": "minecraft:book"
         },
         "title": "Every Tick",
-        "description": "",
+        "description": "Runs all the commands which occur every tick, including trigger control.",
         "show_toast": false,
         "announce_to_chat": false
     },
+    "parent": "templex_standard:templex_root",
     "rewards": {
         "commands": [
             "/advancement revoke @a[score_SpawnPoint_min=1] only templex_standard:spawnpoint",

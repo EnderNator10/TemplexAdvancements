@@ -4,6 +4,7 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"

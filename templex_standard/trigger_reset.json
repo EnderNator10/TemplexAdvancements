@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
         "title": "Trigger Reset",
-        "description": "",
+        "description": "Controls the TriggerReset trigger, which re-enables all triggers for all players.",
         "show_toast": false,
         "announce_to_chat": false
     },

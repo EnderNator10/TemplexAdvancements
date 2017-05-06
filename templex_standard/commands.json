@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
         "title": "Commands",
-        "description": "",
+        "description": "Controls the Commands trigger, which teleports the user to the command block room.",
         "show_toast": false,
         "announce_to_chat": false
     },

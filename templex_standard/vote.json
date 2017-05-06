@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
         "title": "Vote",
-        "description": "",
+        "description": "Controls the Vote trigger, which gives information on how to vote when called.",
         "show_toast": false,
         "announce_to_chat": false
     },

@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
         "title": "Home",
-        "description": "",
+        "description": "Controls the Home trigger, which kills the player to return them to home when called.",
         "show_toast": false,
         "announce_to_chat": false
     },

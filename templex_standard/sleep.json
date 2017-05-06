@@ -4,13 +4,14 @@
             "trigger": "minecraft:slept_in_bed"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:stone_pickaxe",
             "data": 0
         },
         "title": "Sleep Check",
-        "description": "",
+        "description": "Controls the behavior of the server when a user sleeps.",
         "icon": {
             "item": "minecraft:bed"
         },

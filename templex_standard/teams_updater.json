@@ -9,10 +9,11 @@
             "item": "minecraft:book"
         },
         "title": "Teams Updater",
-        "description": "",
+        "description": "Updates the teams of users according to time played.",
         "show_toast": false,
         "announce_to_chat": false
     },
+    "parent": "templex_standard:templex_root",
     "rewards": {
         "commands": [
             "/execute @p[team=NC,score_PlayTime_min=504000,tag=!1] ~ ~ ~ tellraw @a [{\"selector\":\"@a[team=NC,score_PlayTime_min=504000,tag=!1]\"},{\"text\":\" \\u00A7chas just leveled up to the \\u00A78Warrior \\u00A7crank!\"}]",

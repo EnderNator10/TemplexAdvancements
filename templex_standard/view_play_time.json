@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
         "title": "View Play Time",
-        "description": "",
+        "description": "Controls the ViewPlayTime trigger, which displays the user's play time in hours when called.",
         "show_toast": false,
         "announce_to_chat": false
     },

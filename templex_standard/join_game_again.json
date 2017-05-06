@@ -4,12 +4,13 @@
             "trigger": "minecraft:tick"
         }
     },
+    "parent": "templex_standard:templex_root",
     "display": {
         "icon": {
             "item": "minecraft:book"
         },
         "title": "Return to Game",
-        "description": "",
+        "description": "Controls the server actions on player login.",
         "show_toast": false,
         "announce_to_chat": false
     },
