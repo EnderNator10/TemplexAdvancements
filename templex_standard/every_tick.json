@@ -16,12 +16,12 @@
     "parent": "templex_standard:templex_root",
     "rewards": {
         "commands": [
-            "/execute @a[tag=!joined] ~ ~ ~ scoreboard players add Players-All-Time Stats 1",
-            "/tp @a[tag=!joined] @e[tag=world_spawn]",
-            "/spawnpoint @a[tag=!joined]",
-            "/scoreboard players set @p[tag=!joined] TriggerReset 1",
-            "/execute @a[tag=!joined] ~ ~ ~ tellraw @a [{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\" is a new player\",\"color\":\"red\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWelcome to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWe have now had \",\"color\":\"red\"},{\"score\":{\"name\":\"Players-All-Time\",\"objective\":\"Stats\"},\"color\":\"gold\"},{\"text\":\" players join this version of \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
-            "/scoreboard players tag @s[tag=!joined] add joined",
+            "/execute @a[team=,tag=!joined] ~ ~ ~ scoreboard players add Players-All-Time Stats 1",
+            "/tp @a[team=,tag=!joined] @e[tag=world_spawn]",
+            "/spawnpoint @a[team=,tag=!joined]",
+            "/scoreboard players set @p[team=,tag=!joined] TriggerReset 1",
+            "/execute @a[team=,tag=!joined] ~ ~ ~ tellraw @a [{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\" is a new player\",\"color\":\"red\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWelcome to \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\", \",\"color\":\"dark_gray\"},{\"selector\":\"@s\",\"color\":\"green\"},{\"text\":\"!\",\"color\":\"dark_gray\"},{\"text\":\"\\nWe have now had \",\"color\":\"red\"},{\"score\":{\"name\":\"Players-All-Time\",\"objective\":\"Stats\"},\"color\":\"gold\"},{\"text\":\" players join this version of \",\"color\":\"red\"},{\"text\":\"Templex\",\"color\":\"dark_aqua\"},{\"text\":\"!\",\"color\":\"dark_gray\"}]",
+            "/scoreboard players tag @a[tag=!joined] add joined",
 
             "/spawnpoint @a[score_SpawnPoint_min=1]",
             "/tellraw @a[score_SpawnPoint_min=1] {\"text\":\"Spawnpoint successfully set!\",\"color\":\"blue\",\"italic\":\"true\"}}",
