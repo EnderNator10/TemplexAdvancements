@@ -16,8 +16,8 @@
     },
     "rewards": {
         "commands": [
-            "/kill @s[score_Home_min=1]",
-            "/scoreboard players reset @s Home",
+            "/scoreboard players tag @s[score_Home_min=1] add killed",
+            "/kill @s[tag=killed]",
             "/scoreboard players enable @a Home",
             "/scoreboard players enable @s Home"
         ]
