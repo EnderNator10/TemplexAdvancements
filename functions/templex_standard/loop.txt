@@ -17,6 +17,11 @@
 /execute @p[score_SpawnPoint_min=1] ~ ~ ~ scoreboard players enable @a SpawnPoint
 /execute @p[score_SpawnPoint_min=1] ~ ~ ~ scoreboard players set @s SpawnPoint 0
 
+/scoreboard players tag @a[tag=kill_now] remove kill_now
+/scoreboard players tag @a[score_Home_min=1] remove kill_now
+/scoreboard players set @a[score_Home_min=1] Home 0
+/kill @a[tag=kill_now]
+
 /tp @a[score_Spawn_min=1] @e[tag=world_spawn]
 /execute @p[score_Spawn_min=1] ~ ~ ~ scoreboard players enable @a Spawn
 /execute @p[score_Spawn_min=1] ~ ~ ~ scoreboard players set @a Spawn 0
