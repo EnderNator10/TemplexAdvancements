@@ -9,9 +9,9 @@
             "item": "minecraft:book"
         },
         "title": "Templex Advancements",
-        "description": "",
-        "show_toast": false,
+        "description": "TODO",
         "background": "minecraft:textures/blocks/gold_block.png",
+        "show_toast": false,
         "announce_to_chat": false
     }
 }
