@@ -19,3 +19,5 @@
 /execute @a[score_Vote_min=1] ~ ~ ~ function templex_standard:vote
 
 /execute @a[score_TriggerReset_min=1] ~ ~ ~ function templex_standard:trigger_reset
+
+/execute @a[score_TPEnd_min=1] ~ ~ ~ function templex_standard:tp_end
