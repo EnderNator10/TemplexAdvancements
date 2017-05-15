@@ -20,4 +20,10 @@
 
 /execute @a[score_TriggerReset_min=1] ~ ~ ~ function templex_standard:trigger_reset
 
-/execute @a[score_TPEnd_min=1] ~ ~ ~ function templex_standard:tp_end
+/execute @a[score_TPEnd_min=1] ~ ~ ~ function templex_standard:tp_end_try
+
+/execute @a[score_Survival_min=1] ~ ~ ~ function templex_standard:survival
+
+/execute @a[score_RTP_min=1] ~ ~ ~ function templex_standard:rtp_try
+
+/execute @a[score_BuyRTP_min=1] ~ ~ ~ function templex_standard:buy_rtp_try
