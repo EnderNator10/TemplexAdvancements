@@ -24,6 +24,7 @@
 
 /execute @a[score_Survival_min=1] ~ ~ ~ function templex_standard:survival
 
+/execute @a[x=452,y=21,z=429,r=2] ~ ~ ~ function templex_standard:rtp_try
 /execute @a[score_RTP_min=1] ~ ~ ~ function templex_standard:rtp_try
 
 /execute @a[score_BuyRTP_min=1] ~ ~ ~ function templex_standard:buy_rtp_try
