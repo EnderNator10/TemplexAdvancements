@@ -1,7 +1,9 @@
-weather clear 100000
-time set 0
-tellraw @a [{"selector":"@s"},{"text":" has just slept the night away","color":"red"},{"text":"!","color":"dark_gray"}]
-advancement revoke @s only templex_standard:sleep
-scoreboard players add Days Stats 1
-scoreboard players set DS Inputter 24000
-scoreboard players operation DS Inputter *= Days Stats
+scoreboard players add @s SleepTime 1
+execute @s[score_SleepTime_min=100] ~ ~ ~ weather clear 100000
+execute @s[score_SleepTime_min=100] ~ ~ ~ time set 0
+execute @s[score_SleepTime_min=100] ~ ~ ~ tellraw @a [{"selector":"@s"},{"text":" has just slept the night away","color":"red"},{"text":"!","color":"dark_gray"}]
+execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players set @s SleepTime 0
+execute @s[score_SleepTime_min=100] ~ ~ ~ advancement revoke @s only templex_standard:sleep
+execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players add Days Stats 1
+execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players set DS Inputter 24000
+execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players operation DS Inputter *= Days Stats
