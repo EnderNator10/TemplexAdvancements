@@ -11,5 +11,6 @@ scoreboard players enable * Vote
 scoreboard players enable * TriggerReset
 scoreboard players enable * Survival
 scoreboard players enable * RTP
+scoreboard players enable * BuyRTP
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
 scoreboard players set @a TriggerReset 0
