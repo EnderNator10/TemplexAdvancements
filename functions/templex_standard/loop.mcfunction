@@ -2,10 +2,6 @@ execute @a[team=,tag=!joined] ~ ~ ~ function templex_standard:new_player_setup
 scoreboard players tag @a[tag=!joined] add joined
 scoreboard teams join NC @a[team=]
 
-execute @e[type=Armor_Stand,tag=ann] ~ ~ ~ setblock ~ ~ ~ redstone_block
-execute @e[type=Armor_Stand,tag=ann] ~ ~ ~ setblock ~ ~ ~ air
-execute @e[type=Armor_Stand,tag=ann] ~ ~ ~ scoreboard players tag @s remove ann
-
 ####
 
 execute @a[score_SpawnPoint_min=1] ~ ~ ~ function templex_standard:spawnpoint
