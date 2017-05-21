@@ -7,3 +7,4 @@ execute @s[score_SleepTime_min=100] ~ ~ ~ advancement revoke @s only templex_sta
 execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players add Days Stats 1
 execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players set DS Inputter 24000
 execute @s[score_SleepTime_min=100] ~ ~ ~ scoreboard players operation DS Inputter *= Days Stats
+execute @s[score_SleepTime_min=100] ~ ~ ~ execute @r[tag=ann_stand,type=Armor_Stand,x=479,y=7,z=443,r=10] ~ ~ ~ setblock ~ ~ ~ redstone_block
