@@ -2,6 +2,15 @@ execute @a[team=,tag=!joined] ~ ~ ~ function templex_standard:new_player_setup
 scoreboard players tag @a[tag=!joined] add joined
 scoreboard teams join NC @a[team=]
 
+tp @e[x=485,y=6,z=457,r=100,type=Creeper] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Enderman] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Skeleton] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Spider] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Cave_Spider] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Zombie] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Zombie_Villager] ~ ~-270 ~
+tp @e[x=485,y=6,z=457,r=100,type=Endermite] ~ ~-270 ~
+
 ####
 
 execute @a[score_SpawnPoint_min=1] ~ ~ ~ function templex_standard:spawnpoint
