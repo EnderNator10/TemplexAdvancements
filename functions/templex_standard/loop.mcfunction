@@ -2,6 +2,10 @@ execute @a[team=,tag=!joined] ~ ~ ~ function templex_standard:new_player_setup
 scoreboard players tag @a[tag=!joined] add joined
 scoreboard teams join NC @a[team=]
 
+scoreboard players set @a Dim -1 {Dimension:-1}
+scoreboard players set @a Dim 0 {Dimension:0}
+scoreboard players set @a Dim 1 {Dimension:1}
+
 tp @e[x=485,y=6,z=457,r=100,type=Creeper] ~ ~-270 ~
 tp @e[x=485,y=6,z=457,r=100,type=Enderman] ~ ~-270 ~
 tp @e[x=485,y=6,z=457,r=100,type=Skeleton] ~ ~-270 ~
@@ -39,3 +43,5 @@ execute @a[x=452,y=21,z=429,r=2] ~ ~ ~ function templex_standard:rtp_try
 execute @a[score_RTP_min=1] ~ ~ ~ function templex_standard:rtp_try
 
 execute @a[score_BuyRTP_min=1] ~ ~ ~ function templex_standard:buy_rtp_try
+
+execute @p[score_Dim_min=1,score_Dim=1,x=170,y=52,z=0,r=100,m=0] ~ ~ ~ function templex_standard:end_protection
