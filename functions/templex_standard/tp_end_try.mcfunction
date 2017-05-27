@@ -1,6 +1,6 @@
 execute @s[score_Karma_min=3000,tag=!endcmplt] ~ ~ ~ tellraw @a [{"selector":"@s"},{"text":" has just bought permanent access to the End for free.\nYou must have at least 3000 Karma to buy it.","color":"gold"}]
 execute @s[score_Karma_min=3000,tag=!endcmplt] ~ ~ ~ tellraw @s [{"text":"Successfully bought permanent access to the End!","color":"blue","italic":"true"}]
-execute @e[type=Bat,c=50] ~ ~ ~ summon Lightning_Bolt ~ ~ ~
+execute @s[score_Karma_min=3000,tag=!endcmplt] ~ ~ ~ execute @e[type=Bat,c=50] ~ ~ ~ summon Lightning_Bolt ~ ~ ~
 execute @s[score_Karma_min=3000,tag=!endcmplt] ~ ~ ~ scoreboard players tag @s add endcmplt
 
 execute @s[tag=endcmplt] ~ ~ ~ function templex_standard:tp_end_confirm
