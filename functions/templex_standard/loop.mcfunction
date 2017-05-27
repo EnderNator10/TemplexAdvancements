@@ -17,11 +17,11 @@ tp @e[x=485,y=6,z=457,r=100,type=Endermite] ~ ~-270 ~
 
 ####
 
-execute @a[team=!Warrior,score_PlayTime_min=504000,score_PlayTime=1223999,tag=!special] ~ ~ ~ function team_warrior
-execute @a[team=!Archaeologist,score_PlayTime_min=1224000,score_PlayTime=3167999,tag=!special] ~ ~ ~ function team_archaeologist
-execute @a[team=!Master,score_PlayTime_min=3168000,score_PlayTime=5759999,tag=!special] ~ ~ ~ function team_master
-execute @a[team=!Knight,score_PlayTime_min=5760000,score_PlayTime=12095999,tag=!special] ~ ~ ~ function team_knight
-execute @a[team=!Magician,score_PlayTime_min=12096000,score_PlayTime=50000000,tag=!special] ~ ~ ~ function team_magician
+execute @a[team=!Warrior,score_PlayTime_min=504000,score_PlayTime=1223999,tag=!special] ~ ~ ~ templex_standard:function team_warrior
+execute @a[team=!Archaeologist,score_PlayTime_min=1224000,score_PlayTime=3167999,tag=!special] ~ ~ ~ function templex_standard:team_archaeologist
+execute @a[team=!Master,score_PlayTime_min=3168000,score_PlayTime=5759999,tag=!special] ~ ~ ~ function templex_standard:team_master
+execute @a[team=!Knight,score_PlayTime_min=5760000,score_PlayTime=12095999,tag=!special] ~ ~ ~ function templex_standard:team_knight
+execute @a[team=!Magician,score_PlayTime_min=12096000,score_PlayTime=50000000,tag=!special] ~ ~ ~ function templex_standard:team_magician
 
 ####
 
