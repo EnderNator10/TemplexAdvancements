@@ -5,3 +5,5 @@ scoreboard players set @a[score_TPSend_min=1] TPSend 0
 scoreboard players set @a[score_TPHere_min=1] TPHere 0
 scoreboard players enable @a TPSend
 scoreboard players enable @a TPHere
+scoreboard players set @a TPSR 0
+scoreboard players set @a TPHR 0
