@@ -52,4 +52,8 @@ execute @a[score_RTP_min=1] ~ ~ ~ function templex_standard:rtp_try
 
 execute @a[score_BuyRTP_min=1] ~ ~ ~ function templex_standard:buy_rtp_try
 
-execute @p[score_Dim_min=1,score_Dim=1,x=170,y=52,z=0,r=100,m=0] ~ ~ ~ function templex_standard:end_protection
+execute @a[score_Dim_min=1,score_Dim=1,x=170,y=52,z=0,r=100,m=0] ~ ~ ~ function templex_standard:end_protection
+
+execute @a[score_TPSend_min=1] ~ ~ ~ function templex_standard:tpsend
+
+execute @a[score_TPHere_min=1] ~ ~ ~ function templex_standard:tphere
