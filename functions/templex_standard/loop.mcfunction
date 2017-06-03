@@ -57,3 +57,5 @@ execute @a[score_Dim_min=1,score_Dim=1,x=170,y=52,z=0,r=100,m=0] ~ ~ ~ function 
 execute @a[score_TPSend_min=1] ~ ~ ~ function templex_standard:tpsend
 
 execute @a[score_TPHere_min=1] ~ ~ ~ function templex_standard:tphere
+
+execute @a[score_Diamond_min=1] ~ ~ ~ function templex_standard:xray_check
