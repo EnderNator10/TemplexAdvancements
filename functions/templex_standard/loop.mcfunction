@@ -2,6 +2,8 @@ execute @a[tag=!joined] ~ ~ ~ function templex_standard:new_player_setup
 scoreboard players tag @a[tag=!joined] add joined
 scoreboard teams join NC @a[team=]
 
+scoreboard players add @a SleepTime 1 {Sleeping:1b}
+
 scoreboard players set @a Dim -1 {Dimension:-1}
 scoreboard players set @a Dim 0 {Dimension:0}
 scoreboard players set @a Dim 1 {Dimension:1}
@@ -59,3 +61,5 @@ execute @a[score_TPSend_min=1] ~ ~ ~ function templex_standard:tpsend
 execute @a[score_TPHere_min=1] ~ ~ ~ function templex_standard:tphere
 
 execute @a[score_Diamond_min=1] ~ ~ ~ function templex_standard:xray_check
+
+execute @a[score_SleepTime_min=120] ~ ~ ~ function templex_standard:sleep
