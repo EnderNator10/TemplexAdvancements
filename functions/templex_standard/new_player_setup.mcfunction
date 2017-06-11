@@ -1,5 +1,5 @@
 tp @s -237 19 28
-spawnpoint @s
+execute @s[tag=!OP,m=0] ~ ~ ~ spawnpoint @s
 scoreboard players set @s RTPs 5
 scoreboard players set @s TriggerReset 1
 execute @s[team=] ~ ~ ~ scoreboard players add Players-All-Time Stats 1
