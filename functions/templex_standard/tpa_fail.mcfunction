@@ -1,4 +1,4 @@
-tellraw @s [{"text":"TP request timed out after five seconds...","color":"red"}]
+tellraw @s [{"text":"TP request timed out after ten seconds...","color":"red"}]
 execute @a[score_TPSend_min=1] ~ ~ ~ scoreboard players set @s TPSR 0
 scoreboard players enable @a TPSend
 scoreboard players set @s TPSend 0
