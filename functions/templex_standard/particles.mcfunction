@@ -1,4 +1,4 @@
-execute @s[team=Owner] ~ ~ ~ particle enchantmenttable ~ ~ ~ 1 1 1 0.001 1 force @a
+execute @s[team=Owner] ~ ~ ~ particle enchantmenttable ~ ~ ~ 1 1 1 0.001 5 force @a
 execute @s[team=Sysadmin] ~ ~ ~ particle dragonbreath ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=HeadAdmin] ~ ~ ~ particle flame ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=HSL] ~ ~ ~ particle happyVillager ~ ~ ~ 1 1 1 0.001 1 force @a
