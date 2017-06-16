@@ -14,3 +14,6 @@ execute @s[team=VIPP] ~ ~ ~ particle portal ~ ~ ~ 1 1 1 0.001 5 force @a
 execute @s[team=MVP] ~ ~ ~ particle explode ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=MVPP] ~ ~ ~ particle lava ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=DNRP] ~ ~ ~ particle angryVillager ~ ~ ~ 1 1 1 0.001 1 force @a
+
+execute @s[team=Streamer] ~ ~ ~ particle totem ~ ~ ~ 1 1 1 0.001 1 force @a
+execute @s[team=YT] ~ ~ ~ particle lava ~ ~ ~ 1 1 1 0.001 1 force @a
