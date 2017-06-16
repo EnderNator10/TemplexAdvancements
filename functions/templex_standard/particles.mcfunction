@@ -6,6 +6,7 @@ execute @s[team=HeadMod] ~ ~ ~ particle endRod ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=Admin] ~ ~ ~ particle cloud ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=Admin-YT] ~ ~ ~ particle cloud ~ ~ ~ 1 1 1 0.001 1 force @a
 execute @s[team=Mod] ~ ~ ~ particle reddust ~ ~ ~ 1 1 1 1 1 force @a
+execute @s[team=Mod-YT] ~ ~ ~ particle reddust ~ ~ ~ 1 1 1 1 1 force @a
 execute @s[team=Helper] ~ ~ ~ particle totem ~ ~ ~ 1 1 1 0.001 1 force @a
 
 execute @s[team=VIP] ~ ~ ~ particle smoke ~ ~ ~ 1 1 1 0.001 1 force @a
