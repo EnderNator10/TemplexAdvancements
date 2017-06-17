@@ -2,7 +2,7 @@ execute @a[tag=!joined] ~ ~ ~ function templex_standard:new_player_setup
 scoreboard players tag @a[tag=!joined] add joined
 scoreboard teams join NC @a[team=]
 
-scoreboard players set @a[tag=!PO,team=!Templexian] PartOn 1 {Tags:["special"]}
+scoreboard players set @a[tag=!PO] PartOn 1 {Tags:["special"]}
 
 scoreboard players add @a SleepTime 1 {Sleeping:1b}
 
