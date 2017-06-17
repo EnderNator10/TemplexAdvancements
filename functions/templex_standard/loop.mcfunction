@@ -65,3 +65,7 @@ execute @a[score_SleepTime_min=120] ~ ~ ~ function templex_standard:sleep
 execute @a[score_PartOn_min=1,m=!3] ~ ~ ~ function templex_standard:particles
 
 execute @a[score_ToggleParticle_min=1] ~ ~ ~ function templex_standard:toggleparticle
+
+execute @a[score_BuyXP_min=1] ~ ~ ~ function templex_standard:xp_try
+
+execute @a[score_Firework_min=1,tag=special] ~ ~ ~ function templex_standard:firework
