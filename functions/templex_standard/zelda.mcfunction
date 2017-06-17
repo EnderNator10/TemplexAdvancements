@@ -9,4 +9,6 @@ execute @s[score_ZeldaTime_min=30,score_ZeldaTime=30] ~ ~ ~ execute @a[r=20] ~ ~
 execute @s[score_ZeldaTime_min=35,score_ZeldaTime=35] ~ ~ ~ execute @a[r=20] ~ ~ ~ playsound minecraft:block.note.harp master @s ~ ~ ~ 1 1.41421
 execute @s[score_ZeldaTime_min=35] ~ ~ ~ scoreboard players enable @a[tag=special] Secret
 execute @s[score_ZeldaTime_min=35] ~ ~ ~ scoreboard players set @s Secret 0
+execute @s[score_ZeldaTime_min=35] ~ ~ ~ tellraw @a[tag=OP] [{"text":"Secret Zelda Theme System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just played a tune!","color":"red"}]
+execute @s[score_ZeldaTime_min=35] ~ ~ ~ tellraw @a[r=20] [{"selector":"@s"},{"text":" just played a tune!","color":"green"},{"text":"\n(Secret Theme from Legend of Zelda OoT)","color":"gold"}]
 execute @s[score_ZeldaTime_min=35] ~ ~ ~ scoreboard players reset @s ZeldaTime
