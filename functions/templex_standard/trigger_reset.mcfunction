@@ -14,7 +14,6 @@ scoreboard players enable @a RTP
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a ToggleParticle
 scoreboard players enable @a BuyXP
-scoreboard players reset * Firework
-scoreboard players enable @a[tag=Fire] Firework
+scoreboard players enable @a[tag=special] Firework
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
 scoreboard players set @a TriggerReset 0
