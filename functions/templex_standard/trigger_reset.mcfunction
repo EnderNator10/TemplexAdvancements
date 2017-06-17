@@ -1,16 +1,16 @@
-scoreboard players enable * Rules
-scoreboard players enable * SpawnPoint
-scoreboard players enable * Spawn
-scoreboard players enable * TPEnd
-scoreboard players enable * Commands
-scoreboard players enable * Home
-scoreboard players enable * TPHere
-scoreboard players enable * TPSend
-scoreboard players enable * ViewPlayTime
-scoreboard players enable * Vote
-scoreboard players enable * TriggerReset
-scoreboard players enable * Survival
-scoreboard players enable * RTP
-scoreboard players enable * BuyRTP
+scoreboard players enable @a Rules
+scoreboard players enable @a SpawnPoint
+scoreboard players enable @a Spawn
+scoreboard players enable @a TPEnd
+scoreboard players enable @a Commands
+scoreboard players enable @a Home
+scoreboard players enable @a TPHere
+scoreboard players enable @a TPSend
+scoreboard players enable @a ViewPlayTime
+scoreboard players enable @a Vote
+scoreboard players enable @a TriggerReset
+scoreboard players enable @a Survival
+scoreboard players enable @a RTP
+scoreboard players enable @a BuyRTP
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
 scoreboard players set @a TriggerReset 0
