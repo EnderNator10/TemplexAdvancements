@@ -1,4 +1,4 @@
-execute @s[score_Karma_min=150] ~ ~ ~ xp 50
+execute @s[score_Karma_min=150] ~ ~ ~ xp 50 @s
 execute @s[score_Karma_min=150] ~ ~ ~ tellraw @a[tag=OP] [{"text":"BuyXP System","color":"gold"},{"text":" : ","color":"dark_gray"},{"text":"Successfully gave ","color":"red"},{"selector":"@s"},{"text":" 50","color":"gold"},{"text":" XP in exchange for ","color":"red"},{"text":"150","color":"gold"},{"text":" Karma!","color":"red"}]
 execute @s[score_Karma_min=150] ~ ~ ~ tellraw @s [{"text":"Successfully bought ","color":"green"},{"text":"50","color":"gold"},{"text":" XP for ","color":"green"},{"text":"150","color":"gold"},{"text":" Karma!","color":"green"}]
 execute @s[score_Karma_min=150] ~ ~ ~ scoreboard players remove @s Karma 150
