@@ -69,3 +69,5 @@ execute @a[score_ToggleParticle_min=1] ~ ~ ~ function templex_standard:togglepar
 execute @a[score_BuyXP_min=1] ~ ~ ~ function templex_standard:xp_try
 
 execute @a[score_Firework_min=1,tag=special] ~ ~ ~ function templex_standard:firework
+
+execute @a[score_Secret_min=1,tag=special] ~ ~ ~ function templex_standard:zelda
