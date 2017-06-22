@@ -17,6 +17,7 @@ tp @e[x=485,y=6,z=457,r=100,type=Endermite] ~ ~-270 ~
 
 ####
 
+execute @a[team=!NC,score_PlayTime_min=0,score_PlayTime=503999,tag=!special] ~ ~ ~ function templex_standard:ncfix
 execute @a[team=!Warrior,score_PlayTime_min=504000,score_PlayTime=1223999,tag=!special] ~ ~ ~ templex_standard:function team_warrior
 execute @a[team=!Archaeologist,score_PlayTime_min=1224000,score_PlayTime=3167999,tag=!special] ~ ~ ~ function templex_standard:team_archaeologist
 execute @a[team=!Master,score_PlayTime_min=3168000,score_PlayTime=5759999,tag=!special] ~ ~ ~ function templex_standard:team_master
