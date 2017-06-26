@@ -18,11 +18,12 @@ tp @e[x=485,y=6,z=457,r=100,type=Endermite] ~ ~-270 ~
 ####
 
 execute @a[team=!NC,score_PlayTime_min=0,score_PlayTime=503999,tag=!special] ~ ~ ~ function templex_standard:ncfix
-execute @a[team=!Warrior,score_PlayTime_min=504000,score_PlayTime=1223999,tag=!special] ~ ~ ~ templex_standard:function team_warrior
-execute @a[team=!Archaeologist,score_PlayTime_min=1224000,score_PlayTime=3167999,tag=!special] ~ ~ ~ function templex_standard:team_archaeologist
-execute @a[team=!Master,score_PlayTime_min=3168000,score_PlayTime=5759999,tag=!special] ~ ~ ~ function templex_standard:team_master
-execute @a[team=!Knight,score_PlayTime_min=5760000,score_PlayTime=12095999,tag=!special] ~ ~ ~ function templex_standard:team_knight
-execute @a[team=!Magician,score_PlayTime_min=12096000,score_PlayTime=50000000,tag=!special] ~ ~ ~ function templex_standard:team_magician
+execute @a[team=!Warrior,score_PlayTime_min=504000,score_PlayTime=1223999,tag=!special] ~ ~ ~ function templex_standard:team_warrior
+execute @a[team=!Explorer,score_PlayTime_min=1224000,score_PlayTime=1583999,tag=!special] ~ ~ ~ function templex_standard:team_explorer
+execute @a[team=!Master,score_PlayTime_min=1584000,score_PlayTime=3167999,tag=!special] ~ ~ ~ function templex_standard:team_master
+execute @a[team=!Knight,score_PlayTime_min=3168000,score_PlayTime=6335999,tag=!special] ~ ~ ~ function templex_standard:team_knight
+execute @a[team=!Magician,score_PlayTime_min=6336000,score_PlayTime=12095999,tag=!special] ~ ~ ~ function templex_standard:team_magician
+execute @a[team=!HighKing,score_PlayTime_min=12096000,score_PlayTime=50000000,tag=!special] ~ ~ ~ function templex_standard:team_highking
 
 ####
 
