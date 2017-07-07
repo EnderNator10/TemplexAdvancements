@@ -77,3 +77,5 @@ execute @a[score_Secret_min=1,tag=special] ~ ~ ~ function templex_standard:zelda
 execute @a[score_Ping_min=1] ~ ~ ~ function templex_standard:ping
 
 execute @a[score_Iron_min=1] ~ ~ ~ function templex_standard:iron
+
+execute @a[score_Store_min=1] ~ ~ ~ function templex_standard:store
