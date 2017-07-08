@@ -10,10 +10,10 @@ execute @s[score_Inputter_min=6,score_RunTick_min=1,tag=!InRun] ~ ~ ~ tellraw @s
 execute @s[score_Inputter_min=6,score_RunTick_min=1,tag=!InRun] ~ ~ ~ scoreboard players set @s Run 0
 execute @s[score_Inputter_min=6,score_RunTick_min=1,tag=!InRun] ~ ~ ~ scoreboard players enable @a Run
 
+execute @s[score_RunTick=0,tag=!InRun] ~ ~ ~ tellraw @s [{"text":"You don't have enough tickets to do this. Buy more at the store! (/trigger Store set 1)","color":"red"}]
+execute @s[score_RunTick=0,tag=!InRun] ~ ~ ~ scoreboard players set @s Run 0
+execute @s[score_RunTick=0,tag=!InRun] ~ ~ ~ scoreboard players enable @a Run
+
 execute @s[tag=InRun] ~ ~ ~ tellraw @s [{"text":"You are already playing!","color":"red"}]
 execute @s[tag=InRun] ~ ~ ~ scoreboard players set @s Run 0
 execute @s[tag=InRun] ~ ~ ~ scoreboard players enable @a Run
-
-execute @s[score_RunTick=0] ~ ~ ~ tellraw @s [{"text":"You don't have enough tickets to do this. Buy more at the store! (/trigger Store set 1)","color":"red"}]
-execute @s[score_RunTick=0] ~ ~ ~ scoreboard players set @s Run 0
-execute @s[score_RunTick=0] ~ ~ ~ scoreboard players enable @a Run
