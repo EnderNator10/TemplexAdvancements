@@ -4,6 +4,7 @@ execute @a[tag=!InRun,r=100,m=2] ~ ~ ~ scoreboard players add Z Run 1
 scoreboard players tag @a[tag=!InRun,r=100,m=2] add InRun
 execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ water 0 tp @s -580424 18 -1421573 -90 0
 execute @s[score_Dummy_min=3,score_Dummy=6] ~ ~ ~ fill -580422 18 -1421576 -580422 24 -1421570 minecraft:air
+execute @s[score_Dummy_min=3,score_Dummy=6] ~ ~ ~ title @a[tag=InRun,r=100] title [{"text":"Now Starting!","color":"green"}]
 execute @s[score_Dummy_min=0,score_Dummy=2] ~ ~ ~ title @a[tag=InRun,r=100] actionbar [{"text":"Waiting for players...","color":"red"}]
 effect @a[tag=InRun,r=100] minecraft:saturation 3 20 true
 execute @a[tag=RunCmplt,r=100] ~ ~ ~ title @a[tag=InRun,r=100] actionbar [{"selector":"@s"},{"text":" has won!","color":"green"}]
