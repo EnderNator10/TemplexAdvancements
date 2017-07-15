@@ -1,5 +1,4 @@
 scoreboard players operation @s Dummy = Z Run
-execute @a[tag=!InRun,r=100,m=2] ~ ~ ~ scoreboard players set Z Run 0
 execute @a[tag=!InRun,r=100,m=2] ~ ~ ~ scoreboard players add Z Run 1
 scoreboard players tag @a[tag=!InRun,r=100,m=2] add InRun
 execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ water 0 tp @s -580424 18 -1421573 -90 0
