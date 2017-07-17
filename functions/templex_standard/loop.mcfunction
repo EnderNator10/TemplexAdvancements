@@ -82,6 +82,12 @@ execute @a[score_Iron_min=1] ~ ~ ~ function templex_standard:iron
 
 execute @a[score_Store_min=1] ~ ~ ~ function templex_standard:store
 
-execute @a[score_Run_min=1] ~ ~ ~ function templex_standard:run_mini_go
+execute @a[score_Run_min=1] ~ ~ ~ function templex_standard:mini_run_go
+
+execute @a[score_Shovel_min=1] ~ ~ ~ function templex_standard:mini_shovel_go
 
 execute @a[score_BuyTC1_min=1] ~ ~ ~ function templex_standard:buy_tc1
+
+execute @a[score_BuyRun_min=1] ~ ~ ~ function templex_standard:buy_run
+
+execute @a[score_BuyShovel_min=1] ~ ~ ~ function templex_standard:buy_shovel
