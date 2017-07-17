@@ -37,6 +37,7 @@ execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard pl
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players add @a[tag=SWinner,r=100] Karma 95
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players add @a[tag=InShovel,r=100] TC 5
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players add @a[tag=InShovel,r=100] Karma 5
+execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ fill -1136959 10 -1956211 -1136919 10 -1956251 minecraft:snow
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ gamemode s @a[r=100,m=2]
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players set @a[r=100,m=0] Spawn 1
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a[r=100] remove Started
