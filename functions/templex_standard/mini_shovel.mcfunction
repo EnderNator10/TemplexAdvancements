@@ -13,8 +13,8 @@ execute @a[tag=InShovel,r=100] ~ ~ ~ detect ~ ~ ~ water 0 scoreboard players tag
 execute @a[tag=InShovel,r=100] ~ ~ ~ detect ~ ~ ~ water 0 tellraw @a [{"text":"Shovel Minigame","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" has been eliminated from the spleef game!","color":"red"}]
 execute @a[tag=InShovel,r=100] ~ ~ ~ detect ~ ~ ~ water 0 tp @s -1136959 15 -1956251 -45 0
 
-execute @s[score_Dummy_min=4,score_Dummy=16,tag=!Started] ~ ~ ~ scoreboard players add @s Dummy3 1
-execute @s[score_Dummy_min=0,score_Dummy=3] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Waiting for players...","color":"red"}]
+execute @s[score_Dummy_min=3,score_Dummy=16,tag=!Started] ~ ~ ~ scoreboard players add @s Dummy3 1
+execute @s[score_Dummy_min=0,score_Dummy=2] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Waiting for players...","color":"red"}]
 
 execute @s[score_Dummy3_min=0,score_Dummy3=0] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"5","color":"gold"},{"text":"...","color":"green"}]
 execute @s[score_Dummy3_min=20,score_Dummy3=20] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"4","color":"gold"},{"text":"...","color":"green"}]
@@ -51,12 +51,12 @@ execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard pl
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players add @a[tag=InShovel,r=100] Karma 5
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ clear @a[tag=InShovel,r=100] minecraft:diamond_shovel 0 64 {display:{LocName:"Pooper Scooper",Lore:["Only for spleef!"]},CanDestroy:["minecraft:snow"],Unbreakable:1}
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ fill -1136959 10 -1956211 -1136919 10 -1956251 minecraft:snow
-execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ gamemode s @a[r=100,m=2]
-execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players set @a[r=100,m=0] Spawn 1
+execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players set @a[r=100,m=2] Spawn 1
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a[r=100] remove Started
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a remove SWinner
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a remove Fallen
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a remove InShovel
+execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ gamemode s @a[r=100,m=2]
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players reset @a[r=100,tag=InShovel,m=0] Dummy2
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players reset @a[r=100,tag=InShovel,m=0] Dummy
 
