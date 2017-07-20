@@ -26,11 +26,12 @@ execute @s[score_ShovelTick=0,tag=!InShovel] ~ ~ ~ tellraw @s [{"text":"You don'
 execute @s[score_ShovelTick=0,tag=!InShovel] ~ ~ ~ scoreboard players set @s Shovel 0
 execute @s[score_ShovelTick=0,tag=!InShovel] ~ ~ ~ scoreboard players enable @a Shovel
 
-execute @s[tag=!InShovel,score_InShovel_min=1] ~ ~ ~ tellraw @s [{"text":"This game is already in session... You are now spectating.","color":"red"}]
-execute @s[tag=!InShovel,score_InShovel_min=1] ~ ~ ~ scoreboard players remove @s[tag=!betaTester] ShovelTick 1
-execute @s[tag=!InShovel,score_InShovel_min=1] ~ ~ ~ tp @s -1136959 15 -1956251 -45 0
-execute @s[tag=!InShovel,score_InShovel_min=1] ~ ~ ~ scoreboard players set @s Shovel 0
-execute @s[tag=!InShovel,score_InShovel_min=1] ~ ~ ~ scoreboard players enable @a Shovel
+execute @s[tag=!InShovel,score_Shovel_min=1] ~ ~ ~ tellraw @s [{"text":"This game is already in session... You are now spectating.","color":"red"}]
+execute @s[tag=!InShovel,score_Shovel_min=1] ~ ~ ~ scoreboard players remove @s[tag=!betaTester] ShovelTick 1
+execute @s[tag=!InShovel,score_Shovel_min=1] ~ ~ ~ scoreboard players tag @s add Fallen
+execute @s[tag=!InShovel,score_Shovel_min=1] ~ ~ ~ tp @s -1136959 15 -1956251 -45 0
+execute @s[tag=!InShovel,score_Shovel_min=1] ~ ~ ~ scoreboard players set @s Shovel 0
+execute @s[tag=!InShovel,score_Shovel_min=1] ~ ~ ~ scoreboard players enable @a Shovel
 
 execute @s[tag=InShovel] ~ ~ ~ tellraw @s [{"text":"You are already playing!","color":"red"}]
 execute @s[tag=InShovel] ~ ~ ~ scoreboard players set @s Shovel 0
