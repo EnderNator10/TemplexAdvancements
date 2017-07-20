@@ -53,9 +53,9 @@ execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ clear @a[tag=
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ fill -1136959 10 -1956211 -1136919 10 -1956251 minecraft:snow
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players set @a[r=100,m=2] Spawn 1
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a[r=100] remove Started
-execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a remove SWinner
-execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a remove Fallen
-execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag @a remove InShovel
+execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag * remove SWinner
+execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag * remove Fallen
+execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players tag * remove InShovel
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ gamemode s @a[r=100,m=2]
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players reset @a[r=100,tag=InShovel,m=0] Dummy2
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InShovel] ~ ~ ~ scoreboard players reset @a[r=100,tag=InShovel,m=0] Dummy
