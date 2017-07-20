@@ -1,8 +1,10 @@
 scoreboard players operation @s Inputter = Z Run
+
 execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ tp @s -580424 18 -1421573 -90 0
-execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ tellraw @s [{"text":"Successfully paid 1 ticket to play the Run Parkour Minigame! Wait for at least 3 players to join!","color":"green"}]
-execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ tellraw @a[tag=OP] [{"text":"Run TP System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" was just TPed to the Run Minigame! There are ","color":"red"},{"score":{"name":"Z","objective":"Run"},"color":"gold"},{"text":" players currently in the minigame!","color":"red"}]
-execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ scoreboard players remove @s RunTick 1
+execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ tellraw @s [{"text":"Successfully paid 1 ticket to play the Run Parkour Minigame! Wait for at least 3 players to joi$
+execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ tellraw @a[tag=OP] [{"text":"Run TP System","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"t$
+execute @s[score_Inputter=5,score_RunTick_min=0,tag=!InRun] ~ ~ ~ scoreboard players remove @s[tag=!betaTester] RunTick 1
+execute @s[score_Inputter=5,score_RunTick_min=-1,score_RunTick=-1,tag=!InRun] ~ ~ ~ scoreboard players add @s[tag=!betaTester] RunTick 1
 execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ scoreboard players set @s Run 0
 execute @s[score_Inputter=5,score_RunTick_min=1,tag=!InRun] ~ ~ ~ scoreboard players enable @a Run
 
