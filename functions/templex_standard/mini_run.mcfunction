@@ -10,10 +10,21 @@ execute @a[r=100,tag=!RunAdded] ~ ~ ~ scoreboard players tag @s add RunAdded
 
 execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ water 0 tp @s -580424 18 -1421573 -90 0
 
-execute @s[score_Dummy_min=3,score_Dummy=6,tag=!Started] ~ ~ ~ fill -580422 18 -1421576 -580422 24 -1421570 minecraft:air
-execute @s[score_Dummy_min=3,score_Dummy=6,tag=!Started] ~ ~ ~ title @a[tag=InRun,r=100] title [{"text":"Now Starting!","color":"green"}]
-execute @s[score_Dummy_min=3,score_Dummy=6] ~ ~ ~ scoreboard players tag @a[tag=InRun,r=100] add Started
+execute @s[score_Dummy_min=3,score_Dummy=6,tag=!Started] ~ ~ ~ scoreboard players add @s Dummy3 1
+
 execute @s[score_Dummy_min=0,score_Dummy=2] ~ ~ ~ title @a[tag=InRun,r=100] actionbar [{"text":"Waiting for players...","color":"red"}]
+
+execute @s[score_Dummy3_min=0,score_Dummy3=0] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"5","color":"gold"},{"text":"...","color":"green"}]
+execute @s[score_Dummy3_min=20,score_Dummy3=20] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"4","color":"gold"},{"text":"...","color":"green"}]
+execute @s[score_Dummy3_min=40,score_Dummy3=40] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"3","color":"gold"},{"text":"...","color":"green"}]
+execute @s[score_Dummy3_min=60,score_Dummy3=60] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"2","color":"gold"},{"text":"...","color":"green"}]
+execute @s[score_Dummy3_min=80,score_Dummy3=80] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"1","color":"gold"},{"text":"...","color":"green"}]
+execute @s[score_Dummy3_min=100,score_Dummy3=100] ~ ~ ~ title @a[tag=InShovel,r=100] actionbar [{"text":"Game starts in ","color":"green"},{"text":"0","color":"gold"},{"text":"...","color":"green"}]
+execute @s[score_Dummy3_min=100,score_Dummy3=100] ~ ~ ~ fill -580422 18 -1421576 -580422 24 -1421570 minecraft:air
+execute @s[score_Dummy3_min=100,score_Dummy3=100] ~ ~ ~ title @a[tag=InRun,r=100] title [{"text":"Now Starting!","color":"green"}]
+execute @s[score_Dummy3_min=100,score_Dummy3=100] ~ ~ ~ tp @a[tag=InShovel,r=100] -1136939 11 -1956231
+execute @s[score_Dummy3_min=100,score_Dummy3=100] ~ ~ ~ scoreboard players tag @a[tag=InShovel,r=100] add Started
+execute @s[score_Dummy3_min=100,score_Dummy3=100] ~ ~ ~ scoreboard players reset @a[tag=InShovel,r=100] Dummy3
 
 effect @a[tag=InRun,r=100] minecraft:saturation 3 20 true
 
@@ -32,9 +43,9 @@ execute @a[score_Dummy_min=120,score_Dummy=120,tag=InRun] ~ ~ ~ fill -580422 18 
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InRun] ~ ~ ~ scoreboard players tag @a[r=100] remove Started
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InRun] ~ ~ ~ scoreboard players tag @a remove RunCmplt
 execute @a[score_Dummy_min=120,score_Dummy=120,tag=InRun] ~ ~ ~ scoreboard players tag @a remove InRun
-execute @a[score_Dummy_min=120,score_Dummy=120,tag=InRun] ~ ~ ~ scoreboard players reset @a[r=100,tag=InRun,m=0] Dummy
+execute @a[score_Dummy_min=120,score_Dummy=120,r=100] ~ ~ ~ scoreboard players reset @a[r=100,tag=InRun,m=0] Dummy
 
 execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ stone_pressure_plate 1 trigger Spawn set 1
-execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ stone_pressure_plate 1 scoreboard players add @s RunTick 1
+execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ stone_pressure_plate 1 scoreboard players add @s[tag=!betaTester] RunTick 1
 execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ stone_pressure_plate 1 scoreboard players tag @s remove InRun
 execute @a[tag=InRun,r=100] ~ ~ ~ detect ~ ~ ~ stone_pressure_plate 1 scoreboard players remove Z Run 1
