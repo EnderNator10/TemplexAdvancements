@@ -8,6 +8,8 @@ scoreboard players set @a[tag=!PO] PartOn 1 {Tags:["special"]}
 
 scoreboard players add @a SleepTime 1 {Sleeping:1b}
 
+scoreboard players tag @a[tag=!InShovel] remove SWinner {Tags:["SWinner"]}
+
 scoreboard players tag @a[x=-580426,y=14,z=-1421581,rm=100,tag=InRun] remove InRun
 
 tp @e[x=485,y=6,z=457,r=100,type=Creeper] ~ ~-270 ~
