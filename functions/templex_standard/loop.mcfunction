@@ -97,3 +97,5 @@ execute @a[score_BuyRun_min=1] ~ ~ ~ function templex_standard:buy_run
 execute @a[score_BuyShovel_min=1] ~ ~ ~ function templex_standard:buy_shovel
 
 execute @a[score_Wither_min=1] ~ ~ ~ function templex_standard:wither_try
+
+execute @a[score_Shulker_min=1] ~ ~ ~ function templex_standard:buy_shulker_try
