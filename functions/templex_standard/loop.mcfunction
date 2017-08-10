@@ -20,6 +20,7 @@ tp @e[x=-150,y=68,z=117,r=100,type=Cave_Spider] ~ ~-270 ~
 tp @e[x=-150,y=68,z=117,r=100,type=Zombie] ~ ~-270 ~
 tp @e[x=-150,y=68,z=117,r=100,type=Zombie_Villager] ~ ~-270 ~
 tp @e[x=-150,y=68,z=117,r=100,type=Endermite] ~ ~-270 ~
+tp @e[x=-150,y=68,z=117,r=100,type=Tnt] ~ ~-270 ~
 
 ####
 
