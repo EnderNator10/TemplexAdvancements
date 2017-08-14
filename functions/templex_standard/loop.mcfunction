@@ -93,6 +93,10 @@ execute @a[score_Shovel_min=1] ~ ~ ~ function templex_standard:mini_shovel_go
 
 execute @a[score_BuyTC1_min=1] ~ ~ ~ function templex_standard:buy_tc1
 
+execute @a[score_BuyTC10_min=1] ~ ~ ~ function templex_standard:buy_tc10
+
+execute @a[score_BuyTC100_min=1] ~ ~ ~ function templex_standard:buy_tc100
+
 execute @a[score_BuyRun_min=1] ~ ~ ~ function templex_standard:buy_run
 
 execute @a[score_BuyShovel_min=1] ~ ~ ~ function templex_standard:buy_shovel
