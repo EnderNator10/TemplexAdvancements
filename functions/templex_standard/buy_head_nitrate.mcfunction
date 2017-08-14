@@ -4,5 +4,5 @@ tellraw @s[score_TC_min=5600] [{"text":"Successfully bought Nitrate's head for 5
 execute @s[score_TC_min=5600] ~ ~ ~ tellraw @a[tag=OP] [{"text":"Store","color":"gold"},{"text":" : ","color":"dark_gray"},{"selector":"@s"},{"text":" just bought Nitrate's head for 5600 Templex Credits!","color":"red"}]
 scoreboard players remove @s[score_TC_min=5600] TC 5600
 playsound minecraft:block.note.xylophone master @s[score_TC_min=5600]
-scoreboard players set @s Buy_Arrow 0
-scoreboard players enable @a Buy_Arrow
+scoreboard players set @s BuyHead_Nitrate 0
+scoreboard players enable @a BuyHead_Nitrate
