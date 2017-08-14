@@ -14,6 +14,12 @@ scoreboard players enable @a RTP
 scoreboard players enable @a BuyRTP
 scoreboard players enable @a ToggleParticle
 scoreboard players enable @a BuyXP
+scoreboard players enable @a Store
+scoreboard players enable @a Shulker
+scoreboard players enable @a Ping
 scoreboard players enable @a[tag=special] Firework
+scoreboard players enable @a[tag=special] ToggleParticle
+scoreboard players enable @a[tag=special] Secret
+scoreboard players enable @a[tag=special] Taunt
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
 scoreboard players set @a TriggerReset 0
