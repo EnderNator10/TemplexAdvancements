@@ -100,3 +100,13 @@ execute @a[score_BuyShovel_min=1] ~ ~ ~ function templex_standard:buy_shovel
 execute @a[score_Wither_min=1] ~ ~ ~ function templex_standard:wither_try
 
 execute @a[score_Shulker_min=1] ~ ~ ~ function templex_standard:buy_shulker_try
+
+execute @a[score_Store_KP_min=1] ~ ~ ~ function templex_standard:store_kp
+
+execute @a[score_Store_TC_min=1] ~ ~ ~ function templex_standard:store_tc
+
+execute @a[score_Buy_Arrow_min=1] ~ ~ ~ function templex_standard:buy_arrow
+
+execute @a[score_Buy_Slimeball_min=1] ~ ~ ~ function templex_standard:buy_slimeball
+
+execute @a[score_BuyHead_Nitrate_min=1] ~ ~ ~ function templex_standard:buy_head_nitrate
