@@ -29,5 +29,7 @@ scoreboard players enable @a[tag=special] ToggleParticle
 scoreboard players enable @a[tag=special] Secret
 scoreboard players enable @a[tag=special] Taunt
 
+scoreboard players enable @a[tag=Iron] Iron
+
 tellraw @a [{"text":"All triggers have been reset!","color":"blue","italic":"true"}]
 scoreboard players set @a TriggerReset 0
