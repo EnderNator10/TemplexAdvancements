@@ -6,8 +6,8 @@
 #-- Upon Plot Wars spawn --
 # Spawning
 execute @p[score_PW_min=1] ~ ~ ~ tp @s 2075663 172 -489763 0 0
-execute @p[score_PW_min=1] ~ ~ ~ tellraw @a [{"\u00A76[\u00A74PW\u00A76] "},{"selector":"@s"},{"text":" \u00A7ahas just joined the Plot Wars tetric."}]
-execute @p[score_PW_min=1] ~ ~ ~ tellraw @s [{"\u00A76[\u00A74PW\u00A76] \u00A7aWelcome to Plot Wars!"}]
+execute @p[score_PW_min=1] ~ ~ ~ tellraw @a [{"text":"\u00A76[\u00A74PW\u00A76] "},{"selector":"@s"},{"text":" \u00A7ahas just joined the Plot Wars tetric."}]
+execute @p[score_PW_min=1] ~ ~ ~ tellraw @s [{"text":"\u00A76[\u00A74PW\u00A76] \u00A7aWelcome to Plot Wars!"}]
 execute @p[score_PW_min=1] ~ ~ ~ effect @s resistance 1000000 100 true
 execute @p[score_PW_min=1,tag=!PIDed] ~ ~ ~ title @a actionbar [{"text":"\u00A76[\u00A74PW\u00A76] \u00A72Now Generating a Plot. Expect Lag!"}]
 execute @p[score_PW_min=1,tag=!PIDed] ~ ~ ~ tellraw @a [{"text":"\u00A76[\u00A74PW\u00A76] \u00A72Now Generating a Plot. Expect Lag!"}]
@@ -31,7 +31,9 @@ execute @p[score_PW_min=1,tag=!PIDed] ~ ~ ~ execute @e[name=PlotStand,tag=Plotte
 execute @p[score_PW_min=1,tag=!PIDed] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ scoreboard players tag @s remove PlottedStand
 execute @p[score_PW_min=1,tag=!PIDed] ~ ~ ~ scoreboard players tag @s add PIDed
 execute @p[score_PW_min=1] ~ ~ ~ scoreboard players set @s InPW 1
+execute @p[score_PW_min=1] ~ ~ ~ scoreboard players enable @a[tag=BetaTester] PW
 execute @p[score_PW_min=1] ~ ~ ~ scoreboard players set @s PW 0
+
 
 #-- This assigns players to things --
 # Assigning plots
@@ -49,8 +51,10 @@ execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStan
 execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ tp @s -133 67 93
 execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ scoreboard players set @s PlotID 0
 execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ scoreboard players set @s Plot 0
-execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ title @p[score_GetPlot_min=1] actionbar [{"text":"\u00A76[\u00A74PW\u00A76] \u00A72Plot Located!"}]
+execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ title @p[score_GoToPlot_min=1] actionbar [{"text":"\u00A76[\u00A74PW\u00A76] \u00A72Plot Located!"}]
 execute @p[score_GoToPlot_min=1] ~ ~ ~ execute @e[name=PlotStand,tag=PlottedStand] ~ ~ ~ scoreboard players tag @s remove PlottedStand
+execute @p[score_GoToPlot_min=1] ~ ~ ~ scoreboard players enable @a[tag=BetaTester] GoToPlot
+execute @p[score_GoToPlot_min=1] ~ ~ ~ scoreboard players set @s GoToPlot 0
 
 #-- This deals with messages --
 ##Buying a house
